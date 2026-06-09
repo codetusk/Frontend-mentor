@@ -5,4 +5,7 @@ for the Frontend Mentor exercises that I'll be attempting to
 do.
 My objective while thinking about these exercises is to make me
 more competent and confident on my front-end skills.
-[QR-Code](./qr-code-component-main)
+## Exercises
+
+- [QR-Code Exercise](./qr-code-component-main)
+
