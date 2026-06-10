@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
   margin: auto;
   transform-box: content-box;
   background: hsl(212, 45%, 89%);
 }
-
+body > * {
+  border: inherit;
+}
 article {
   max-width: 288px;
   margin-inline: auto;
@@ -40,7 +47,6 @@ img {
 .attribution {
   margin-inline: auto;
   font-size: 0.6875rem;
-  text-align: center;
   font-family: Outfit, sans-serif;
 }
 
