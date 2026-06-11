@@ -9,24 +9,25 @@
 }
 
 body {
+  --main-color: hsl(47, 88%, 63%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
   align-items: center;
   height: 100vh;
-  background-color: hsl(47, 88%, 63%);
-  font-family: Figtree;
+  background-color: var(--main-color);
+  font-family: Figtree, sans-serif;
   font-weight: 500;
 }
 
 article {
   max-width: 24rem;
-  padding: 1.25em;
+  padding: 1.25rem;
   border: 1px solid black;
   border-radius: 1rem;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: rgba(0, 0, 0, 100%) 6px 6px;
+  box-shadow: black 6px 6px;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -42,7 +43,7 @@ article > h3 {
 }
 
 article > h3:hover {
-  color: hsl(47, 88%, 63%);
+  color: var(--main-color);
 }
 
 article > footer {
@@ -62,9 +63,9 @@ ul {
 
 li {
   display: inline-block;
-  padding: 0.5em 0.9em;
-  border-radius: 0.3em;
-  background-color: hsl(47, 88%, 63%);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--main-color);
 }
 
 .avatar {
