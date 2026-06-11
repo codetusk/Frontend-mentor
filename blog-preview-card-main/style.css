@@ -41,6 +41,10 @@ article > h3 {
   font-size: 1.25rem;
 }
 
+article > h3:hover {
+  color: hsl(47, 88%, 63%);
+}
+
 article > footer {
   display: flex;
   justify-content: flex-start;
