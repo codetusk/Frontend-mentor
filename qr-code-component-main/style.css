@@ -7,7 +7,7 @@ body {
 
   height: 100vh;
   margin: auto;
-  transform-box: content-box;
+  box-sizing: border-box;
   background: hsl(212, 45%, 89%);
 }
 body > * {
