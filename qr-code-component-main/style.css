@@ -14,7 +14,7 @@ body > * {
   border: inherit;
 }
 article {
-  max-width: 288px;
+  max-width: 24rem;
   margin-inline: auto;
   padding: 1em;
   border-radius: 1em;
