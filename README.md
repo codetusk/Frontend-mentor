@@ -9,4 +9,5 @@ more competent and confident on my front-end skills.
 
 - [QR-Code Exercise](./qr-code-component-main)
 - [Blog Preview Card](./blog-preview-card-main)
+- [Social Media Links](./social-links-profile-main)
 
