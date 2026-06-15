@@ -1,94 +1,100 @@
-/* font imports  */
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
-/* css reset */
+:root {
+  --primary-color: hsl(47, 88%, 63%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray900: hsl(0, 0%, 7%);
+  --bold-weight: 800;
+  --default-weight: 500;
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  --main-color: hsl(47, 88%, 63%);
+  min-height: 100vh;
+  padding: 3rem;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
   align-items: center;
-  height: 100vh;
-  background-color: var(--main-color);
-  font-family: Figtree, sans-serif;
-  font-weight: 500;
+
+  background-color: var(--primary-color);
 }
 
 article {
   max-width: 24rem;
-  padding: 1.25rem;
-  border: 1px solid black;
-  border-radius: 1rem;
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: black 6px 6px;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid var(--gray500);
+  box-shadow: black 8px 8px;
+
+  background-color: white;
+  color: var(--gray900);
+  font-size: 0.875rem;
+  font-weight: var(--default-weight);
+  font-family: Figtree, sans-serif;
+  line-height: 150%;
+
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-}
-
-article > img {
-  border-radius: inherit;
-  width: 100%;
-}
-
-article > h3 {
-  font-size: 1.25rem;
-}
-
-article > h3:hover {
-  color: var(--main-color);
-}
-
-article > footer {
-  display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.illustration {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8125rem;
+}
+
+.pill {
+  border-radius: 4px;
+  padding: 4px 12px;
+
+  font-weight: var(--bold-weight);
+  background-color: var(--primary-color);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: var(--bold-weight);
+}
+
+h1:hover {
+  color: var(--primary-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--gray500);
+}
+
+.author {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 32px;
 }
 
 address {
   font-style: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.3rem;
-  background-color: var(--main-color);
-}
-
-.avatar {
-  width: 1.75rem;
-}
-
-.bold-text {
-  color: hsl(0, 0%, 7%);
-  font-weight: 800;
-}
-
-.small-text {
-  font-size: 0.875rem;
-}
-
-.description {
-  color: hsl(0, 0%, 42%);
-}
-
-.attribution {
-  font-size: 1rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  font-weight: var(--bold-weight);
 }
