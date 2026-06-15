@@ -2,8 +2,13 @@
 
 :root {
   --primary-color: hsl(75, 94%, 57%);
-  --primary-color-contrast: hsl(0, 0%, 12%);
-  --card-border-radius: 0.4rem;
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+  --default-weight: 400;
+  --middle-weight: 600;
+  --boldest-weight: 700;
+  --p-font-size: 0.875rem;
 }
 
 * {
@@ -14,14 +19,14 @@
 
 body {
   min-height: 100vh;
+  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Inter, sans-serif;
-  font-size: 0.875rem;
-  background: hsl(0, 0%, 8%);
-  color: white;
+
+  background-color: var(--grey900);
 }
 
 main {
@@ -30,144 +35,81 @@ main {
 }
 
 article {
-  padding: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  background-color: var(--primary-color-contrast);
-  border-radius: var(--card-border-radius);
+
+  font-family: Inter, sans-serif;
+  font-size: var(--p-font-size);
+  font-weight: var(--default-weight);
+  color: white;
+  background-color: var(--grey800);
 }
 
-header {
+@media (min-width: 26rem) {
+  article {
+    padding: 2.5rem;
+  }
+}
+
+.bio {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
 
 img {
+  max-width: 5.75rem;
   border-radius: 50%;
-  width: 5rem;
 }
-.presentation {
+
+.introduction {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
 }
-nav {
-  align-self: stretch;
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: var(--middle-weight);
 }
+
+.location {
+  color: var(--primary-color);
+  font-weight: var(--boldest-weight);
+}
+
 ul {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+
+  text-align: center;
+  font-size: 1rem;
+  font-weight: var(--boldest-weight);
+  list-style: none;
 }
+
 li {
   width: 100%;
-  padding: 1rem;
-  list-style: none;
-  background-color: hsl(0, 0%, 20%);
-  font-weight: 700;
-  border-radius: var(--card-border-radius);
-  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0.4375rem;
+  background-color: var(--grey700);
 }
 
 li:hover {
   background-color: var(--primary-color);
-  color: var(--primary-color-contrast);
+  color: var(--grey700);
 }
-
-h1 {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-.location {
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-/* body { */
-/*   background-color: hsl(0, 0%, 8%); */
-/*   font-family: Inter, sans-serif; */
-/* } */
-/**/
-/* main { */
-/*   height: 100vh; */
-/*   display: flex; */
-/*   flex-direction: column; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/* } */
-/**/
-/* article { */
-/*   padding: 1rem; */
-/*   border-radius: var(--card-border-radius); */
-/*   background-color: var(--primary-color-contrast); */
-/*   display: flex; */
-/*   flex-direction: column; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/*   gap: 3rem; */
-/* } */
-/**/
-/* header { */
-/*   color: white; */
-/*   display: flex; */
-/*   flex-direction: column; */
-/*   justify-content: center; */
-/*   align-items: center; */
-/*   gap: 1.5rem; */
-/* } */
-/**/
-/* img { */
-/*   border-radius: 50%; */
-/*   width: 4rem; */
-/* } */
-/**/
-/* h1 { */
-/*   font-weight: 400; */
-/*   font-size: 1.25rem; */
-/* } */
-/**/
-/* p.location { */
-/*   color: var(--primary-color); */
-/*   font-weight: 700; */
-/* } */
-/**/
-/* p { */
-/*   font-size: 0.875rem; */
-/*   color: white; */
-/* } */
-/**/
-/* ul { */
-/*   list-style: none; */
-/*   display: flex; */
-/*   flex-direction: column; */
-/*   justify-items: center; */
-/*   align-items: center; */
-/*   gap: 0.5rem; */
-/* } */
-/**/
-/* li { */
-/*   min-width: 15rem; */
-/*   height: 5rem; */
-/*   background-color: hsl(0, 0%, 20%); */
-/*   border-radius: var(--card-border-radius); */
-/*   color: white; */
-/*   font-weight: 600; */
-/*   text-align: center; */
-/* } */
-/* li:hover { */
-/*   background-color: var(--primary-color); */
-/*   color: var(--primary-color-contrast); */
-/* } */
-/**/
-/* .attribution { */
-/*   font-size: 0.6875rem; */
-/*   text-align: center; */
-/* } */
-/* .attribution a { */
-/*   color: hsl(228, 45%, 44%); */
-/* } */
